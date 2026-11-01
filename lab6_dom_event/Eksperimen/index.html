@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eksperimen Mandiri - DOM dan Event</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="js.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Eksperimen Mandiri Praktikum 6</h1>
+
+    <!-- Eksperimen 2: Validasi nama minimal 3 karakter -->
+    <section>
+      <h2>Eksperimen 2 — Form Pendaftaran (Nama Min. 3 Karakter)</h2>
+      <form id="formPendaftaran" novalidate>
+        <label for="nama">Nama lengkap</label>
+        <input id="nama" name="nama" type="text">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email">
+
+        <label for="usia">Usia</label>
+        <input id="usia" name="usia" type="number" min="17" max="100">
+
+        <button type="submit">Daftar</button>
+      </form>
+      <p id="pesanForm" aria-live="polite"></p>
+    </section>
+
+    <!-- Eksperimen 4: Sembunyikan/tampilkan paragraf dengan class CSS -->
+    <section>
+      <h2>Eksperimen 4 — Sembunyikan/Tampilkan Paragraf</h2>
+      <button id="tombolSembunyi" type="button">Sembunyikan Paragraf</button>
+      <p id="paragrafToggle">Paragraf ini bisa disembunyikan dan ditampilkan kembali menggunakan class CSS.</p>
+    </section>
+  </main>
+</body>
+</html>
